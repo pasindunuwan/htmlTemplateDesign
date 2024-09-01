@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=SUSE:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&family=SUSE:wght@100..800&family=Shadows+Into+Light&display=swap');
 *{padding: 0;
 margin: 0;}
 /* header outer */
@@ -52,4 +54,63 @@ align-items: center;
 .nav-wrapper >ul>li:hover{
     cursor:pointer ;
     color: blue;
+}
+.slider-container{
+height: 800px;
+    border:1px solid red;
+    display: flex;
+}
+.slider-inner{
+    flex:1;
+    
+}
+.left-slider{
+display: flex;
+align-items: center;
+border:1px solid red;
+background-image: url("https://img.freepik.com/free-photo/women-posing-selfie-with-paper-bags_23-2147689087.jpg?ga=GA1.1.1922951663.1688533816&semt=ais_hybrid");
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+
+}  
+.left-slider-content-wrapper{
+    border:1px solid red;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+.left-slider-content-wrapper>h1{
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 40px;
+}
+.left-slider-content-wrapper>h4{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+.shadow{
+    height: 100%;
+    width: 100%;
+    background-color:RGBA( 65, 105, 225, 0.13 ) ;
+    position: absolute;
+}
+.left-slider-content-wrapper>button{
+    margin-top: 20px;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border-color: black;
+    border-width: 2px;
+    font-weight: 500;
+}
+.left-slider-content-wrapper>button:hover{
+    background-color:white;  
+    cursor: pointer;
+    color: black;
 }
