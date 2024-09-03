@@ -10,12 +10,21 @@ margin: 0;}
 display: flex;
 justify-content: center;
 
+border-top: 0cm;
+border-left: 0cm;
+border-right: 0cm;
+border-color: gray;
+margin-bottom: 15px;
+border-width: 3px;
 }
+
 .header-inner{
     width: 70%;
     border:1px solid red;
     height: 100%;
 display: flex;
+border-bottom: 2px;
+
 }
 .logo-wrapper{
     width: 300px;
@@ -59,6 +68,8 @@ align-items: center;
 height: 800px;
     border:1px solid red;
     display: flex;
+    border-bottom:4px dotted #eee ;
+
 }
 .slider-inner{
     flex:1;
@@ -112,5 +123,61 @@ position: relative;
 .left-slider-content-wrapper>button:hover{
     background-color:white;  
     cursor: pointer;
-    color: black;
+    color: black; 
+}
+
+.right-slider{
+    display: flex;
+   
+    flex: 1;
+    border:1px solid red;
+}
+.right-slider-content-wrapper-left{
+   
+    display: flex;
+    border:1px solid red;
+    flex: 1;
+    flex-direction: column;
+}
+.right-slider-content-wrapper-right{
+    display: flex; 
+    flex:1;  
+    border:1px solid red;
+    flex-direction: column;
+}
+.right-slider-content-wrapper-left-up{
+    flex: 1;
+    border:1px solid red;
+    margin: 15px;
+}
+.right-slider-content-wrapper-left-down{
+    flex: 1;
+    border:1px solid red;
+    margin: 15px;
+}
+.right-slider-content-wrapper-right-up{
+    flex: 1;
+    border:1px solid red;
+    margin: 15px;
+}
+.right-slider-content-wrapper-right-down{
+    flex: 1;
+    border:1px solid red;
+    margin: 15px;
+}
+.men-section-heading{
+padding-top: 90px;
+padding-bottom: 90px;
+height: 500px;
+border:1px solid red;
+
+}
+.men-section-heading>h1{
+
+}
+.men-section-heading>h4{
+
+}
+.collection-wrapper{
+    
 }
