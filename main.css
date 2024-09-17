@@ -69,12 +69,10 @@ height: 800px;
     border:1px solid red;
     display: flex;
     border-bottom:4px dotted #eee ;
-
-}
-.slider-inner{
-    flex:1;
+    width: 100%;
     
 }
+
 .left-slider{
 display: flex;
 align-items: center;
@@ -83,8 +81,18 @@ background-image: url("https://img.freepik.com/free-photo/women-posing-selfie-wi
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
+width: 50%;
+height: 100%;
 
 }  
+.right-slider{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    border:1px solid red;
+    align-items: center;
+    height: 800px ;
+}
 .left-slider-content-wrapper{
     border:1px solid red;
     padding: 20px;
@@ -125,49 +133,151 @@ position: relative;
     cursor: pointer;
     color: black; 
 }
-.image-style{  width: 100%;
-    height: 100%;
-    object-fit: fill;
-overflow: hidden; }
-.right-slider{
-    display: flex;
-   
-    flex: 1;
-    border:1px solid red;
-}
+
+
+
 .right-slider-content-wrapper-left{
    
     display: flex;
     border:1px solid red;
-    flex: 1;
+
     flex-direction: column;
+ width: 50%;
+  height: 100%;
 }
 .right-slider-content-wrapper-right{
     display: flex; 
     flex:1;  
     border:1px solid red;
     flex-direction: column;
+   width: 50%;
+  height: 100%;
 }
 .right-slider-content-wrapper-left-up{
-    flex: 1;
+   
     border:1px solid red;
     margin: 15px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+   background-image: url("assets/womenshoping2.avif");
+background-repeat: no-repeat;
+background-size: cover;
+   flex: 1;
+
+
+}
+.img-text-up{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+    /* top: 50%;
+    left: 50%;
+    right:50%; */
+    z-index: 3;  
+}
+.img-text-up>h2{
+     font-size: 40px;
+     color: white;
+    margin-bottom: 10px;
+}
+.img-text-up>h4{
+    font-size: 20px;
+    color: white;
+   
+   
 }
 .right-slider-content-wrapper-left-down{
     flex: 1;
     border:1px solid red;
     margin: 15px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+   
+    background-image: url("assets/kidimage.jpg");
+background-repeat: no-repeat;
+background-size: cover;
 }
 .right-slider-content-wrapper-right-up{
     flex: 1;
     border:1px solid red;
     margin: 15px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("assets/menshoping.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 .right-slider-content-wrapper-right-down{
     flex: 1;
     border:1px solid red;
     margin: 15px;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-image: url("assets/accesseries.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.hover-cover{
+
+    visibility: hidden;
+    position: absolute;
+    background-color:rgba(128, 128, 128, 0.8) ;
+    width: 90%;
+    height: 90%;
+    z-index: 10;
+
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.hover-cover>h1{
+    font-size: 40px;
+    color: white;
+margin-bottom: 5px;
+}
+.hover-cover>h3{
+    font-size: 16px;
+    color: white;
+text-align: center;
+padding-inline: 4px;
+font-weight: 400;
+margin-bottom: 20px;
+}
+.hover-cover>button{
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: medium;
+   color:  solid white;
+   padding: 5px;
+   color: white;
+}
+.right-slider-content-wrapper-left-up:hover .hover-cover,
+.right-slider-content-wrapper-left-down:hover .hover-cover,
+.right-slider-content-wrapper-right-up:hover .hover-cover,
+.right-slider-content-wrapper-right-down:hover .hover-cover {
+    visibility: visible;
+}
+
+.right-slider-content-wrapper-left-up:hover .img-text-up,
+.right-slider-content-wrapper-left-down:hover .img-text-up,
+.right-slider-content-wrapper-right-up:hover .img-text-up,
+.right-slider-content-wrapper-right-down:hover .img-text-up {
+    visibility: hidden;
+}
+
 .collection-section{
     padding-top: 90px;
     padding-bottom: 90px;
